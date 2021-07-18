@@ -1,0 +1,199 @@
+/*Base styling*/
+body{
+    background-color: #61122f; /*Background color for all the body*/
+    font-size: 16px; /*Font size for all the doc*/
+    color: #fff; /*text color for all the document*/
+    font-family: 'Oxygen', sans-serif; /*Font family for the website*/
+    
+}
+
+/*remove (test text)*/
+article{
+    padding: 25px 40px 25px 40px;
+    margin: 20px;
+
+}
+
+/*Section next to the logo (the hole div)*/
+div.navbar-brand
+{
+    border: 1px dashed black;
+    padding-top: 25px;
+    margin-left: 5px; /*this left margin was added to pull apart the second logo of the first one since with the float: left property the image was stick to the first logo*/
+    
+}
+
+
+/*main logo image*/
+.navbar-brand #imagelogo{
+    border: 1px dashed black;
+    width: 150px;
+    height: 150px;
+
+    }
+
+#logo2 h1{/*Restaurant name*/
+    font-family: 'Lora', serif;
+    color: #557c3e;/*text color*/
+    font-size: 1.5em;/*increasin the size by 1 and 50% of the font family regulat size*/
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: .75;/*spacing defines the amount of space above and below inline elements*/
+}
+/*anchor element (wrapping the logo and div with the second section of the logo) behavior in the hover event*/
+#logo2 a:hover, .navbar-brand a:focus{
+    text-decoration: none;
+}
+/*p element inside the second logo section*/
+#logo2 p{ /*Style apple to both element inside p (top margin and so on)*/
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em; /*a 70% larger???*/
+    margin-top: 15px;
+}
+#logo2 p img{ /*image inside second logo section (ironman)*/
+    width: 20px;
+    height: 20px;
+}
+
+/*KOSHER RESTAURANT*/
+#logo2 p span{ /*Aligning the text in reference to the element at its left*/
+    vertical-align: middle;
+}
+
+/*Collapsable navbar element (container)*/
+
+#Collapsiblenavbar{ 
+    border: 1px solid green;
+    align-self: baseline;
+    padding-top: 18px;
+    text-align:center;    
+    
+    }
+
+/*Collapsible navbar element (list)*/
+
+  #nav-list a {
+    color: #951C49; /*text color for each anchor wrapping the content*/
+    
+  }
+  #nav-list a:hover {
+    background: #E7E7E7;
+  }
+  #nav-list a span {
+    font-size: 1.8em; /*Font size for each anchor*/
+
+  }
+  
+  
+  #phone a { /* Phone number inside a span*/
+    padding-top: 0px;
+    padding-bottom: 0px;
+    }
+    
+  #phone div { /* We Deliver */
+    color: #557c3e;
+    text-align: right;
+    line-height: 7px;
+    padding-right: 10px;
+    }
+
+
+
+/*Media queries breakpoints*/
+/*// Extra small devices (portrait phones, less than 576px)*/
+/*// No media query since this is the default in Bootstrap*/
+
+
+/*--------------------------------------------------------------*/
+/* Extra Small devices (any screen below 575px) */
+@media (max-width: 575px){ 
+    #logo2 h1{
+        color: black;
+        font-size: 10px;
+    }
+
+     
+
+    
+    
+}
+/*--------------------------------------------------------------*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { 
+    #logo2 h1{
+        color: cadetblue;
+        font-size: 20px;
+    }
+
+        
+        
+    #logo2 p{ /*Style apple to both element inside p (top margin and so on)*/
+            color: rgb(238, 16, 16);
+            text-transform: uppercase;
+            font-size: .4em; /*a 70% larger???*/
+            margin-top: 15px; 
+        }
+
+        
+}
+
+
+/*--------------------------------------------------------------*/
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) {
+    #logo2 h1{
+        color: red;
+        font-size: 0.9em;
+        }
+
+    #nav-list a span{ /*icons and phone number*/
+            font-size: 1em;
+        }
+
+    #nav-list a{/*general font size in the ul*/
+
+    }
+
+    .navbar-brand #imagelogo{
+        width: 90px;
+        height: 90px;
+        margin: 5px 5px 5px 0px;
+    }
+
+}
+
+
+/*--------------------------------------------------------------*/
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #logo2 h1{
+        color: blueviolet;
+        font-size: 1.4em;
+        }
+
+    #nav-list a span{
+        font-size: 1.6em;
+    }
+
+    .navbar-brand #imagelogo{
+        width: 130px;
+        height: 130px;
+        margin: 5px 5px 5px 0px;
+            }
+
+ }
+
+ 
+/*--------------------------------------------------------------*/
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    #nav-list{
+        text-align: center;
+    }
+       
+}

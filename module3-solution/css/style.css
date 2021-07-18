@@ -1,0 +1,63 @@
+
+.navbar{
+    background-color: rgba(109, 127, 165, 0.562);
+    border: 2px solid black;
+    color: black;
+    
+}
+
+.navbar .navbar-brand{/*Brand text*/
+    color: black;    
+}
+
+
+
+#Collapsiblenavbar{
+    background-color: white;
+    
+
+}
+
+h1{
+    font-size: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+#main-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(109, 127, 165, 0.562);
+   
+}
+#main-text{
+    margin: 20px;
+    padding: 10px;
+
+}
+
+/*Give div containing the text a background color from here*/
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+
+ }
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    
+    
+ }
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    
+ }
