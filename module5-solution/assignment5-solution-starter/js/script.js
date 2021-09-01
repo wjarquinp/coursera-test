@@ -100,12 +100,11 @@ function buildAndShowHomeHTML (categories) {//all the categories from the server
 
       //choosing random category
       var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
-      var html = homeHtmlUrl; //I need to store the argument is paased in, in order to use it within the function
-      var category_name = " " + chosenCategoryShortName;
+      //I need to store the argument is paased in, in order to use it within the function
+      
+      var homeHtmlToInsertIntoMainPage =  insertProperty(homeHtml,"randomCategoryShortName", chosenCategoryShortName );
 
-      var homeHtmlToInsertIntoMainPage =  insertProperty(html,"randomCategoryShortName", category_name);
-
-      insertHtml("#main-content", homeHtml);
+      insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
       
       // TODO: STEP 2: Here, call chooseRandomCategory, passing it retrieved 'categories'
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
