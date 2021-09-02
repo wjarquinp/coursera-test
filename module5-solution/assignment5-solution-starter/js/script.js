@@ -99,10 +99,11 @@ function buildAndShowHomeHTML (categories) {//all the categories from the server
     function (homeHtml) {
 
       //choosing random category
-      var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
-      //I need to store the argument is paased in, in order to use it within the function
+      var chosenCategoryShortName = chooseRandomCategory(categories);
+      var category_name =  chosenCategoryShortName.short_name;
+            //I need to store the argument is paased in, in order to use it within the function
       
-      var homeHtmlToInsertIntoMainPage =  insertProperty(homeHtml,"randomCategoryShortName", chosenCategoryShortName );
+      var homeHtmlToInsertIntoMainPage =  insertProperty(homeHtml,"randomCategoryShortName", category_name );
 
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
       
@@ -141,7 +142,7 @@ function chooseRandomCategory (categories) {
   var randomArrayIndex = Math.floor(Math.random() * categories.length);
 
   // return category object with that randomArrayIndex
-  return categories[randomArrayIndex].short_name;
+  return categories[randomArrayIndex];
 
 }
 
